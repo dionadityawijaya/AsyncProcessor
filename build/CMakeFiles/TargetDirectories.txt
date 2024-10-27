@@ -1,0 +1,3 @@
+C:/Users/LENOVO/Desktop/AsyncProcessing/build/CMakeFiles/run.dir
+C:/Users/LENOVO/Desktop/AsyncProcessing/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/LENOVO/Desktop/AsyncProcessing/build/CMakeFiles/ZERO_CHECK.dir

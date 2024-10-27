@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Async Processing API",
+      "version": "1.0.0",
+      "description": "API untuk menambahkan tugas ke antrean pemrosesan asynchronous."
+    },
+    "paths": {
+      "/tasks": {
+        "post": {
+          "summary": "Tambah Tugas",
+          "description": "Menambahkan tugas baru ke antrean untuk diproses secara asynchronous.",
+          "requestBody": {
+            "description": "Tugas yang akan ditambahkan",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "taskId": {
+                      "type": "integer",
+                      "description": "ID Tugas"
+                    }
+                  },
+                  "required": ["taskId"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Tugas berhasil ditambahkan ke antrean."
+            },
+            "400": {
+              "description": "Permintaan tidak valid."
+            }
+          }
+        }
+      }
+    }
+  }
+  

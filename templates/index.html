@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Async Task Processor</title>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-5">
+        <h1 class="text-3xl font-bold mb-5">Async Task Processor</h1>
+        
+        <form id="taskForm" class="mb-5">
+            <input type="number" id="taskId" placeholder="Task ID" class="border p-2 rounded mr-2" required>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded">Add Task</button>
+        </form>
+
+        <div id="response" class="mt-5"></div>
+    </div>
+<script src="/public/js/script.js"></script>
+</body>
+</html>

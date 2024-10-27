@@ -1,0 +1,10 @@
+^C:\USERS\LENOVO\DESKTOP\ASYNCPROCESSING\BUILD\CMAKEFILES\E25D6561632CD82A30AB90E2B172A61E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LENOVO/Desktop/AsyncProcessing -BC:/Users/LENOVO/Desktop/AsyncProcessing/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/LENOVO/Desktop/AsyncProcessing/build/AsyncProcessing.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
